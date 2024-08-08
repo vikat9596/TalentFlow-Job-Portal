@@ -46,7 +46,7 @@ const Register = () => {
     "IT Consulting",
   ];
 
-  const resumeHandler = () => {
+  const resumeHandler = (e) => {
     const file = e.target.files[0];
     setResume(file);
   }

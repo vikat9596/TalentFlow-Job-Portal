@@ -15,7 +15,7 @@ const Navbar = () => {
     <>
       <nav className={show ? 'navbar show_navbar' : 'navbar'}>
         <div className="logo">
-          <img src="/logo.png" alt="logo" />
+          {/* <img src="/logo.png" alt="logo" /> */}
           <h4>TalentFlow</h4>
         </div>
         <div className="links">

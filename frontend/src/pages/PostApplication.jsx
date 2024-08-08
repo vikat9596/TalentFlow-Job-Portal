@@ -110,14 +110,22 @@ const PostApplication = () => {
           <label >Address</label>
           <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} />
         </div>
-        <div>
-          <label >Cover Letter</label>
-          <textarea name="coverLetter" value={coverLetter} rows="10" onChange={(e) => setCoverLetter(e.target.value)}></textarea>
-        </div>
-        <div>
+       
+        {
+          user && user.role === "Job Seeker" && (
+            <>
+            <div>
+            <label >Cover Letter</label>
+            <textarea name="coverLetter" value={coverLetter} rows="10" onChange={(e) => setCoverLetter(e.target.value)}></textarea>
+          </div>
+          <div>
           <label >Resume</label>
           <input type="file" onChange={resumeHandler} />
         </div>
+        </>
+          )
+        }
+        
         {
           (isAuthenticated && user.role=== "Job Seeker") && (
             <div style={{alignItems: "flex-end"}}>

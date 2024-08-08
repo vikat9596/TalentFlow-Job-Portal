@@ -17,10 +17,10 @@ import { getUser } from './store/slices/userSlice';
 
 
 const App = () => {
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() =>{
-    dispath(getUser());
+    dispatch(getUser());
   },[])
 
 

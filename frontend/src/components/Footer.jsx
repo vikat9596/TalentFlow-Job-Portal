@@ -11,7 +11,8 @@ const Footer = () => {
     <>
     <footer>
       <div>
-        <img src="/logo.png" alt="logo" />
+      <h4>TalentFlow</h4>
+        {/* <img src="/logo.png" alt="logo" /> */}
       </div>
       <div>
         <h4>Support</h4>
